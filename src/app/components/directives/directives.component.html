@@ -1,0 +1,16 @@
+<!-- Colocando style in line -->
+<h2 [ngStyle]="{ 'color': 'orange' }">Diretiva de estilo em linha</h2>
+
+<!-- Colocando style in line via parametros -->
+<h2 [ngStyle]="{ 'font-size': size + 'px', 'font-family': font, backgroundColor: bg }">
+  Diretiva de estilo em linha por parametros
+</h2>
+
+<!-- Diretiva de classes -->
+<h2 [ngClass]="classes">
+  Testando diretivas de classe 1
+</h2>
+
+<h2 [ngClass]=underline>
+  Testando diretivas de classe 2
+</h2>
