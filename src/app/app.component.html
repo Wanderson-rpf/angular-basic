@@ -1,27 +1,7 @@
-<h1>Hello word!</h1>
-<h2>Testando H2</h2>
-<app-first-component></app-first-component>
-
-<!-- recebendo dado compartilhado -->
-<app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
-
-<!-- Trabalhando com diretivas -->
-<app-directives></app-directives>
-
-<!-- Renderização condicional -->
-<app-if-render></app-if-render>
-
-<!-- Eventos -->
-<app-events></app-events>
-
-<!-- Emitindo eventos -->
-<app-emitter></app-emitter>
-
-<!-- Renderizando lista -->
-<app-list-render></app-list-render>
-
-<!-- Pipe operators -->
-<app-pipes></app-pipes>
-
-<!-- Two way binding -->
-<app-two-way-binding></app-two-way-binding>
+<p>Header</p>
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/list">List</a>
+</nav>
+<router-outlet></router-outlet>
+<p>Footer</p>
