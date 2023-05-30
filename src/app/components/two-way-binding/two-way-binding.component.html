@@ -1,0 +1,33 @@
+<div class="class">
+  <h2>Aula 15</h2>
+  <form>
+    <label for="input__name"
+      >Name
+      <input
+        type="text"
+        id="input__name"
+        name="name"
+        autocomplete="off"
+        [(ngModel)]="name"
+      />
+      <button type="submit">Enviar</button>
+    </label>
+    <label for="input__email"
+      >Email
+      <input
+        type="text"
+        id="input__email"
+        name="email"
+        autocomplete="off"
+        [(ngModel)]="email"
+      />
+      <button type="submit">Enviar</button>
+    </label>
+  </form>
+  <div *ngIf="name !== ''">
+    <p>O nome é: {{ name }}</p>
+  </div>
+  <div *ngIf="email !== ''">
+    <p>O email é: {{ email }}</p>
+  </div>
+</div>
